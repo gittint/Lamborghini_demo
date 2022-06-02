@@ -19,6 +19,7 @@ html{
     box-sizing: border-box;
 }
 
+/* nav  */
 .nav{
     background-color: var(--black-color);
     display: flex;
@@ -101,7 +102,7 @@ html{
     background-color: var(--black-color);
     padding-bottom: 20px;
     visibility: hidden;
-    animation: UnGrowth ease 0.4s;
+    animation: UnGrowth ease 0.6s;
     transform-origin: 100% top;
     z-index: 0;
 }

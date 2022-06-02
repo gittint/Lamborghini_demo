@@ -75,7 +75,13 @@ html{
 }
 
 .nav__item:hover .nav__item--list{
-    display: block;
+    visibility: visible;
+    animation: Growth ease 0.2s;
+}
+
+.nav__item:hover .nav__item--item{
+    visibility: visible;
+    animation: Appear ease 0.1s;
 }
 
 .nav__item:hover::after{
@@ -94,8 +100,8 @@ html{
     padding-left: 0;
     background-color: var(--black-color);
     padding-bottom: 20px;
-    display: none;
-    animation: Growth ease 0.2s;
+    visibility: hidden;
+    animation: UnGrowth ease 0.4s;
     transform-origin: 100% top;
     z-index: 0;
 }
@@ -114,10 +120,13 @@ html{
 .nav__item--item{
     padding: 10px 0;
     width: 200px;
+    visibility: hidden;
+    animation: Disappear ease 0.1s;
 }
 
 .nav__item--item:hover .nav__item--minmenu{
-    display: block;
+    visibility: visible;
+    animation: Appear ease 1s;
 }
 
 .nav__item--item:hover .nav__item--item-link{
@@ -128,7 +137,7 @@ html{
     font-size: 16px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
-    animation: Opacity ease 0.2s;
+    animation: Visible ease 0.2s;
 }
 
 
@@ -136,9 +145,10 @@ html{
     position: absolute;
     top: 0%;
     left: 99%;
-    display: none;
     z-index: 1;
     min-height: 100%;
+    animation: Disappear ease 1s;
+    visibility: hidden;
 }
 
 .nav__item--minmenu-item{
@@ -150,6 +160,6 @@ html{
     font-size: 16px;
     text-transform: uppercase;
     color: var(--white-color);
-    animation: Opacity ease 0.2s;
 }
 
+/* ---------------------------------------------------------------------------------------------------- */

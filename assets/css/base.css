@@ -7,13 +7,35 @@
 @keyframes Growth{
     from{
         transform: scaleY(0);
+        visibility: hidden;
     }
     to{
         transform: scaleY(1);
+        visibility: visible;
     }
 }
 
-@keyframes Opacity{
+@keyframes UnGrowth{
+    from{
+        transform: scaleY(1);
+        visibility: visible;
+    }
+    to{
+        transform: scaleY(0);
+        visibility: hidden;
+    }
+}
+
+@keyframes Disappear {
+    from{
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes Appear{
     from{
         opacity: 0;
     }

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav{
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__list{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.nav__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    position: relative;
+}
+
+.nav__item--last{
+    margin-right: 0px;
+}
+
+.nav__item--logo-box{
+    height: 60px;
+    margin-right:50px ;
+}
+
+.nav__item--logo{
+    height: 100%;
+}
+
+.nav__item--link{
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.nav__item::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 150%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    display: none;
+}
+
+.nav__item:hover .nav__item--list{
+    display: block;
+}
+
+.nav__item:hover::after{
+    display: block;
+}
+
+.nav__item--link i{
+    font-size: 20px;
+}
+
+.nav__item--list{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: var(--black-color);
+    padding-bottom: 20px;
+    display: none;
+    animation: Growth ease 0.2s;
+    transform-origin: 100% top;
+    z-index: 0;
+}
+
+.nav__item--list::before{
+    content: "";
+    background-color: var(--black-color);
+    width: 150vw;
+    height: 100%;
+    top: 0;
+    left: -50vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav__item--item{
+    padding: 10px 0;
+    width: 200px;
+}
+
+.nav__item--item:hover .nav__item--minmenu{
+    display: block;
+}
+
+.nav__item--item:hover .nav__item--item-link{
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav__item--item-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    animation: Opacity ease 0.2s;
+}
+
+
+.nav__item--minmenu{
+    position: absolute;
+    top: 0%;
+    left: 99%;
+    display: none;
+    z-index: 1;
+    min-height: 100%;
+}
+
+.nav__item--minmenu-item{
+    padding: 10px 0;
+    width: 500px;
+}
+
+.nav__item--minmenu-item-link{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    animation: Opacity ease 0.2s;
+}
+

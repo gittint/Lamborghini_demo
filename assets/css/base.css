@@ -1,0 +1,23 @@
+
+:root{
+    --black-color: #181818;
+    --white-color: white;
+}
+
+@keyframes Growth{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+
+@keyframes Opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

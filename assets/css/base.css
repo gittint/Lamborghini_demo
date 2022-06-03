@@ -5,41 +5,63 @@
 }
 
 @keyframes Growth{
-    from{
+    0%{
         transform: scaleY(0);
         visibility: hidden;
     }
-    to{
+    100%{
         transform: scaleY(1);
         visibility: visible;
     }
 }
 
 @keyframes UnGrowth{
-    from{
+    0%{
         transform: scaleY(1);
         visibility: visible;
     }
-    to{
+    100%{
         transform: scaleY(0);
         visibility: hidden;
     }
 }
 
 @keyframes Disappear {
-    from{
+    0%{
         visibility: visible;
     }
-    to{
+    100%{
         opacity: 0;
     }
 }
 
 @keyframes Appear{
-    from{
+    0%{
         opacity: 0;
     }
-    to{
+    100%{
         opacity: 1;
+    }
+}
+
+@keyframes Line {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 88%;
+        opacity: 1;
+    }
+}
+
+@keyframes Unline {
+    0%{
+        width: 88%;
+        opacity: 1;
+    }
+    100%{
+        width: 0;
+        opacity: 0;
     }
 }

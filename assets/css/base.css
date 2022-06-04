@@ -18,7 +18,7 @@
 @keyframes UnGrowth{
     0%{
         transform: scaleY(1);
-        visibility: visible;
+        visibility: hidden;
     }
     100%{
         transform: scaleY(0);

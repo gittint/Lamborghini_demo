@@ -11,6 +11,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: var(--black-color);
 }
 
 html{
@@ -54,8 +55,13 @@ html{
     top: 122%;
     left: 0%;
     width: 0%;
-    /* animation: Unline ease 0.3s; */
-    /* visibility: hidden; */
+    transition: 0.3s;
+    animation: Unline ease 0.3s;
+    visibility: hidden;
+}
+
+.notline.nav__item::before{
+    display: none;
 }
 
 .nav__item:hover::before{
@@ -121,8 +127,8 @@ html{
     background-color: var(--black-color);
     padding-bottom: 20px;
     visibility: hidden;
-    height: auto;
-    /* animation: UnGrowth ease 0.6s; */
+    transform: 0.3s;
+    /* animation: UnGrowth ease 0.5s; */
     transform-origin: 100% top;
     z-index: 2;
 }
@@ -267,4 +273,106 @@ html{
 
 .btn--click{
     border-bottom:4px solid var(--white-color) ;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* moldel msg  */
+
+.msg-box{
+    position: fixed;
+    top: 0%;
+    right: -30%;
+    background-color: var(--white-color);
+    z-index: 3;
+    height: 100vh;
+}
+
+.msg-box.goleft{
+    right: 0%;
+}
+
+.msg-box.goright{
+    right: -30%;
+}
+
+.msg__bg{
+    background-color: rgba(24, 24, 24, 0.1);
+    height: 94px;
+}
+
+.msg__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(24, 24, 24, 0.1);
+}
+
+.msg__body{
+    /* thanh scroll ẩn  */
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    height: 55vh;
+}
+
+.msg__body::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+
+.msg__header-text{
+    margin: 30px 50px;
+    font-size: 25px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.msg__header-icon{
+    margin: 30px 50px;
+    font-size: 25px;
+    color: var(--black-color);
+}
+
+.msg__body-text{
+    width: 70%;
+    margin: 40px auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.msg__body-list{
+    text-align: center;
+}
+
+.msg__body-item{
+    border: 1px solid rgba(24, 24, 24, 0.1);
+    width: 90%;
+    margin: 10px auto;
+}
+
+.msg__body-item--link{
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.msg__footer-input{
+    border: 1px solid #ced4da;
+    padding: 0 20px;
+    height: 40px;
+    width: 77.3%;
+    font-size: 25px;
+    /* letter-spacing: 0.2rem; */
+    color: #d0d0d0;
+    margin: 20px 0 20px 30px;
+}
+
+.msg__footer-btn{
+    display: block;
+    margin: 0px auto 20px;
+    padding: 10px;
 }

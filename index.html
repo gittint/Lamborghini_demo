@@ -257,13 +257,13 @@
                     <li class="nav__item">
                         <a href="#" class="nav__item--link">Store</a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__item-msg notline" onclick="clickmsg()">
                         <a href="#" class="nav__item--link"><i class="fa-solid fa-comments"></i></a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item notline">
                         <a href="#" class="nav__item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
-                    <li class="nav__item nav__item--last ">
+                    <li class="nav__item nav__item--last notline ">
                         <a href="#" class="nav__item--link"><i class="fa-solid fa-bars"></i></a>
                     </li>
                 </ul>
@@ -307,7 +307,49 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="Model">
+        <div class="msg-box">
+            <div class="msg__bg"></div>
+            <div class="msg__header">
+                <div class="msg__header-text">Ask me</div>
+                <div class="msg__header-icon " onclick="clickX()"><a href="#" class="fa-solid fa-xmark"></a></div>
+            </div>
+
+            <div class="msg__body">
+                <div class="msg__body-text">
+                    I'm Lamborghini's first Artificial Intelligence, how can I help you?
+                </div>
+                <div class="msg__body-text">
+                    You can choose one of the suggestions or ask me a question
+                </div>
+                <ul class="msg__body-list">
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">models</a>
+                    </li>
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">dealer</a>
+                    </li>
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">MUSEUM AND PRODUCTION LINE</a>
+                    </li>
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">ad personam</a>
+                    </li>
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">company and history</a>
+                    </li>
+                    <li class="msg__body-item">
+                        <a href="#" class="msg__body-item--link">masterpieces</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="msg__footer">
+                <input class="msg__footer-input" type="text" placeholder="Hey, ask me something">
+                <button class="msg__footer-btn">SEND</button>
+            </div>
+        </div>
     </div>
 
     <script src="./js/main.js"></script>

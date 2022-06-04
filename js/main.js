@@ -36,3 +36,26 @@ function showSlides(n) {
     dots[slideIndex-1].className += " btn--click";
 }
 
+//xử lý msg-box
+
+var msgbox = document.querySelector(".msg-box");
+var msgbtn = document.querySelector(".nav__item-msg");
+var msgx = document.querySelector(".msg__header-icon");
+console.log(msgbox);
+console.log(msgbtn);
+console.log(btnx);
+
+function clickmsg(){
+    msgbox.classList.add('goleft'); 
+}
+
+function clickX(){
+    msgbox.classList.remove('goleft'); 
+}
+
+
+
+
+
+
+

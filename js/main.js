@@ -43,16 +43,32 @@ var msgbtn = document.querySelector(".nav__item-msg");
 var msgx = document.querySelector(".msg__header-icon");
 console.log(msgbox);
 console.log(msgbtn);
-console.log(btnx);
+console.log(msgx);
 
 function clickmsg(){
     msgbox.classList.add('goleft'); 
 }
 
-function clickX(){
+function clickmsgX(){
     msgbox.classList.remove('goleft'); 
 }
 
+//xử lý search-box
+
+var searchbox = document.querySelector(".search-modal");
+var searchbtn = document.querySelector(".nav__item-search");
+var searchx = document.querySelector(".search__header-close");
+console.log(searchbox);
+console.log(searchbtn);
+console.log(searchx);
+
+function clicksearch(){
+    searchbox.classList.add('godown'); 
+}
+
+function clicksearchX(){
+    searchbox.classList.remove('godown'); 
+}
 
 
 

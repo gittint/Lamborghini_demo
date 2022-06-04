@@ -260,7 +260,7 @@
                     <li class="nav__item nav__item-msg notline" onclick="clickmsg()">
                         <a href="#" class="nav__item--link"><i class="fa-solid fa-comments"></i></a>
                     </li>
-                    <li class="nav__item notline">
+                    <li class="nav__item nav__item-search notline" onclick="clicksearch()">
                         <a href="#" class="nav__item--link"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
                     <li class="nav__item nav__item--last notline ">
@@ -309,12 +309,12 @@
         </div>
     </div>
 
-    <div class="Model">
+    <div class="Modal">
         <div class="msg-box">
             <div class="msg__bg"></div>
             <div class="msg__header">
                 <div class="msg__header-text">Ask me</div>
-                <div class="msg__header-icon " onclick="clickX()"><a href="#" class="fa-solid fa-xmark"></a></div>
+                <div class="msg__header-icon " onclick="clickmsgX()"><a href="#" class="fa-solid fa-xmark"></a></div>
             </div>
 
             <div class="msg__body">
@@ -350,7 +350,29 @@
                 <button class="msg__footer-btn">SEND</button>
             </div>
         </div>
+
+        <div class="search-modal">
+            <div class="search-bg-header"></div>
+            <div class="search-box">
+                <div class="search__header">
+                    <div class="search__header-text">
+                        LAMBORGHINI
+                    </div>
+                    <div class="search__header-close" onclick="clicksearchX()"> 
+                        CLOSE SEARCH <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="search__desc">
+                    SEARCH IN THE WEBSITE
+                </div>
+                <div class="search__footer">
+                    <input class="search__input" type="text" placeholder="Search on Lamborghini.com">
+                    <button class="search__btn">SEARCH</button>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <script src="./js/main.js"></script>
 </body>

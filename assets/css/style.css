@@ -18,6 +18,7 @@ html{
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
 
 /* nav  */
@@ -277,8 +278,8 @@ html{
 
 /* ---------------------------------------------------------------------------------------- */
 
-/* moldel msg  */
-
+/* moldel */
+/* msg  */
 .msg-box{
     position: fixed;
     top: 0%;
@@ -286,14 +287,11 @@ html{
     background-color: var(--white-color);
     z-index: 3;
     height: 100vh;
+    transition: 0.5s;
 }
 
 .msg-box.goleft{
     right: 0%;
-}
-
-.msg-box.goright{
-    right: -30%;
 }
 
 .msg__bg{
@@ -375,4 +373,87 @@ html{
     display: block;
     margin: 0px auto 20px;
     padding: 10px;
+}
+
+/* search  */
+.search-modal{
+    width: calc(100vw - 17px);
+    height: 100vh;
+    position: absolute;
+    top: -100%;
+    z-index: 4;
+    transition: 0.5s;
+}
+
+.search-modal.godown{
+    top: 0%;
+}
+
+.search-bg-header{
+    height: 94px;
+    background-color: rgba(24, 24, 24, 0.7);
+}
+
+.search-box{
+    background-color: var(--black-color);
+    height: calc(100vh - 94px);
+}
+
+.search__header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.search__header-text{
+    font-size: 37px;
+    font-weight: 600;
+    margin-left: 150px;
+    color: var(--white-color);
+
+}
+
+.search__header-close{
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 150px;
+    color: var(--white-color);
+}
+
+.search__header-close i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.search__desc{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 116px;
+    line-height: 120px;
+    margin-left: 150px;
+    width: 70vw;
+    margin-top: 40px;
+}
+
+.search__input{
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 50vw;
+    height: 50px;
+    font-size: 25px;
+    border: transparent;
+    background-color: transparent;
+    outline: none;
+    color: var(--white-color);
+    border-bottom: 1px solid #464646;
+}
+
+.search__btn{
+    font-size: 25px;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border: none;
+    cursor: pointer;
+    /* border-bottom: 1px solid #464646; */
 }

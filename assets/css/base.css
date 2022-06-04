@@ -28,7 +28,7 @@
 
 @keyframes Disappear {
     0%{
-        visibility: visible;
+        
     }
     100%{
         opacity: 0;

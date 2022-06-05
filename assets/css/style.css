@@ -103,7 +103,7 @@ html{
 
 .nav__item:hover .nav__item--list{
     visibility: visible;
-    animation: Growth ease 0.1s;
+    animation: Growth ease 0.2s;
 }
 
 .nav__item:hover .nav__item--item{
@@ -128,7 +128,7 @@ html{
     background-color: var(--black-color);
     padding-bottom: 20px;
     visibility: hidden;
-    transform: 0.3s;
+    transition: 0.1s;
     /* animation: UnGrowth ease 0.5s; */
     transform-origin: 100% top;
     z-index: 2;
@@ -193,6 +193,10 @@ html{
 /* ---------------------------------------------------------------------------------------------------- */
 
 /* slide  */
+
+.slide-list{
+    position: relative;
+}
 
 .slide-item{
     width: 100%;
@@ -278,6 +282,73 @@ html{
 
 /* ---------------------------------------------------------------------------------------- */
 
+/* footer  */
+
+.footer{
+    background-color: var(--black-color);
+    margin-top: 40px;
+    /* padding-bottom: 100px; */
+    color: var(--white-color);
+}
+
+.foot-header__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-header__item{
+    margin-top: 40px;
+    padding: 15px 10px 25px 10px;
+    position: relative;
+}
+
+.foot-header__item--icon.foot-header__item::after{
+    display: none;
+}
+
+.foot-header__item::after{
+    content: "";
+    position: absolute;
+    border-top: 2px solid var(--white-color);
+    z-index: 3;
+    top: 80%;
+    left: 10%;
+    /* width: 88%; */
+    display: block;
+    transition: 0.3s;
+    animation: Unline ease 0.3s;
+    visibility: hidden;
+}
+
+.foot-header__item:hover::after{
+    visibility: visible;
+    animation: Line ease 0.3s;
+    width: 88%;
+}
+
+.foot-header__item--link{
+    color: var(--white-color);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.foot-text-1{
+    padding: 15px 150px 15px 150px;
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.foot-text-2{
+    padding: 15px 150px 50px 150px;
+    color: var(--white-color);
+    font-size: 16px;
+    width: 680px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
 /* moldel */
 /* msg  */
 .msg-box{
